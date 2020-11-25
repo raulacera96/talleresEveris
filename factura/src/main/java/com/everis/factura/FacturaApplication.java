@@ -1,14 +1,13 @@
-package com.everis.gateway;
+package com.everis.factura;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-public class GatewayApplication {
+public class FacturaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GatewayApplication.class, args);
+		SpringApplication.run(FacturaApplication.class, args);
 	}
 
 }
