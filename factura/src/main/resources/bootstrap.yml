@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: discovery-mongo-factura
+  cloud:
+    config:
+      uri: http://localhost:8090
+      force-pull: true

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: discovery-mongo-cliente
+  cloud:
+    config:
+      uri: http://localhost:8090
+      label: main
