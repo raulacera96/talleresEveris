@@ -4,4 +4,4 @@ spring:
   cloud:
     config:
       uri: http://localhost:8090
-      force-pull: true
+      label: main
