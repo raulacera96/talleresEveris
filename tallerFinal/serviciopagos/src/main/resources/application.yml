@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: servicio-pagos
+server:
+  port: 8041

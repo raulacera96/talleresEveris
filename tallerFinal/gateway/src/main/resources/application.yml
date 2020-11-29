@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: microservicio-factura
+          uri: http://localhost:8042/
+          predicates:
+            - Path=/servicio-factura/**
+        - id: microservicio-cliente
+          uri: http://localhost:8030/
+          predicates:
+            - Path=/servicio-cliente/**
+        - id: microservicio-pagos
+          uri: http://localhost:8041/
+          predicates:
+            - Path=/servicio-pagos/**
+        - id: microservicio-visita
+          uri: http://localhost:8031/
+          predicates:
+            - Path=/servicio-visita/**
